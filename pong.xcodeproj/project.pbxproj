@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		70429FAF2793D74B003B38B2 /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 70429FAE2793D74B003B38B2 /* ResourcePath.mm */; };
 		70429FB22793D74B003B38B2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70429FB12793D74B003B38B2 /* main.cpp */; };
+		70429FC42793EC41003B38B2 /* paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70429FC32793EC41003B38B2 /* paddle.cpp */; };
+		70429FCA279401E3003B38B2 /* pong_game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70429FC8279401E3003B38B2 /* pong_game.cpp */; };
+		7085276F2794A5ED006BEA72 /* ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7085276D2794A5ED006BEA72 /* ball.cpp */; };
+		708527722794A8A3006BEA72 /* player_paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 708527702794A8A3006BEA72 /* player_paddle.cpp */; };
+		708527752794A8BD006BEA72 /* computer_paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 708527732794A8BD006BEA72 /* computer_paddle.cpp */; };
+		708527792794C4EA006BEA72 /* scoreboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 708527772794C4EA006BEA72 /* scoreboard.cpp */; };
+		7085277C2794D069006BEA72 /* background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7085277A2794D069006BEA72 /* background.cpp */; };
+		7085277F27973043006BEA72 /* utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7085277D27973043006BEA72 /* utils.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +25,23 @@
 		70429FAE2793D74B003B38B2 /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		70429FB02793D74B003B38B2 /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		70429FB12793D74B003B38B2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		70429FC22793E9F6003B38B2 /* paddle.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = paddle.hpp; sourceTree = "<group>"; };
+		70429FC32793EC41003B38B2 /* paddle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = paddle.cpp; sourceTree = "<group>"; };
+		70429FC8279401E3003B38B2 /* pong_game.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = pong_game.cpp; sourceTree = "<group>"; };
+		70429FC9279401E3003B38B2 /* pong_game.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = pong_game.hpp; sourceTree = "<group>"; };
+		7085276D2794A5ED006BEA72 /* ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ball.cpp; sourceTree = "<group>"; };
+		7085276E2794A5ED006BEA72 /* ball.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ball.hpp; sourceTree = "<group>"; };
+		708527702794A8A3006BEA72 /* player_paddle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = player_paddle.cpp; sourceTree = "<group>"; };
+		708527712794A8A3006BEA72 /* player_paddle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = player_paddle.hpp; sourceTree = "<group>"; };
+		708527732794A8BD006BEA72 /* computer_paddle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = computer_paddle.cpp; sourceTree = "<group>"; };
+		708527742794A8BD006BEA72 /* computer_paddle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = computer_paddle.hpp; sourceTree = "<group>"; };
+		708527762794B283006BEA72 /* constants.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = constants.hpp; sourceTree = "<group>"; };
+		708527772794C4EA006BEA72 /* scoreboard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = scoreboard.cpp; sourceTree = "<group>"; };
+		708527782794C4EA006BEA72 /* scoreboard.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = scoreboard.hpp; sourceTree = "<group>"; };
+		7085277A2794D069006BEA72 /* background.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = background.cpp; sourceTree = "<group>"; };
+		7085277B2794D069006BEA72 /* background.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = background.hpp; sourceTree = "<group>"; };
+		7085277D27973043006BEA72 /* utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = utils.cpp; sourceTree = "<group>"; };
+		7085277E27973043006BEA72 /* utils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = utils.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,10 +74,27 @@
 		70429FAB2793D74B003B38B2 /* pong */ = {
 			isa = PBXGroup;
 			children = (
+				70429FAC2793D74B003B38B2 /* Supporting Files */,
 				70429FAE2793D74B003B38B2 /* ResourcePath.mm */,
 				70429FB02793D74B003B38B2 /* ResourcePath.hpp */,
 				70429FB12793D74B003B38B2 /* main.cpp */,
-				70429FAC2793D74B003B38B2 /* Supporting Files */,
+				70429FC32793EC41003B38B2 /* paddle.cpp */,
+				70429FC22793E9F6003B38B2 /* paddle.hpp */,
+				70429FC8279401E3003B38B2 /* pong_game.cpp */,
+				70429FC9279401E3003B38B2 /* pong_game.hpp */,
+				7085276D2794A5ED006BEA72 /* ball.cpp */,
+				7085276E2794A5ED006BEA72 /* ball.hpp */,
+				708527702794A8A3006BEA72 /* player_paddle.cpp */,
+				708527712794A8A3006BEA72 /* player_paddle.hpp */,
+				708527732794A8BD006BEA72 /* computer_paddle.cpp */,
+				708527742794A8BD006BEA72 /* computer_paddle.hpp */,
+				708527762794B283006BEA72 /* constants.hpp */,
+				708527772794C4EA006BEA72 /* scoreboard.cpp */,
+				708527782794C4EA006BEA72 /* scoreboard.hpp */,
+				7085277A2794D069006BEA72 /* background.cpp */,
+				7085277B2794D069006BEA72 /* background.hpp */,
+				7085277D27973043006BEA72 /* utils.cpp */,
+				7085277E27973043006BEA72 /* utils.hpp */,
 			);
 			path = pong;
 			sourceTree = "<group>";
@@ -155,7 +197,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				70429FB22793D74B003B38B2 /* main.cpp in Sources */,
+				7085277F27973043006BEA72 /* utils.cpp in Sources */,
+				70429FC42793EC41003B38B2 /* paddle.cpp in Sources */,
+				708527722794A8A3006BEA72 /* player_paddle.cpp in Sources */,
+				708527792794C4EA006BEA72 /* scoreboard.cpp in Sources */,
+				708527752794A8BD006BEA72 /* computer_paddle.cpp in Sources */,
 				70429FAF2793D74B003B38B2 /* ResourcePath.mm in Sources */,
+				7085276F2794A5ED006BEA72 /* ball.cpp in Sources */,
+				7085277C2794D069006BEA72 /* background.cpp in Sources */,
+				70429FCA279401E3003B38B2 /* pong_game.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,9 +303,11 @@
 		70429FBF2793D74B003B38B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "pong/pong-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -263,9 +315,11 @@
 		70429FC02793D74B003B38B2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "pong/pong-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
