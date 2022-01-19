@@ -11,6 +11,7 @@ private:
     sf::Vector2f velocity;
     Side pointWinner;
     BallSpeed ballSpeed;
+    sf::Texture texture;
     
     void draw(sf::RenderTarget &target, sf::RenderStates states) const;
     static float getNewYVel(float yCollision, const Paddle& paddle, float xVel);
@@ -31,6 +32,7 @@ public:
     Side getPointWinner() const;
     sf::Vector2f getPosition() const;
     void newPoint();
+    void getNewTexture();
     void updateBallSpeed(BallSpeed newBallSpeed);
 };
 

@@ -3,22 +3,25 @@
 #include <cmath>
 #include "utils.hpp"
 
-Ball::Ball() : ballShape(BALL_RADIUS), velocity(getRandVelocity()), pointWinner(NONE) {
+Ball::Ball() :
+    ballShape(BALL_RADIUS, 30),
+    velocity(getRandVelocity()),
+    pointWinner(NONE),
+    texture(getRandomTexture()) {
     ballShape.setOrigin(BALL_RADIUS, BALL_RADIUS);
     ballShape.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
-    
-    sf::Texture texture;
-    if (!texture.loadFromFile(BALL_TEXTURE_PATH)) {
-        return EXIT_FAILURE;
-    }
     ballShape.setTexture(&texture);
-    //ballShape.setFillColor(BALL_COLOR);
 }
 
 void Ball::newPoint() {
     ballShape.setPosition(WINDOW_WIDTH / 2, WINDOW_HEIGHT / 2);
     velocity = getRandVelocity();
     pointWinner = NONE;
+}
+
+void Ball::getNewTexture() {
+    texture = getRandomTexture();
+    ballShape.setTextureRect({0, 0, static_cast<int>(texture.getSize().x), static_cast<int>(texture.getSize().y)});
 }
 
 void Ball::updateBallSpeed(BallSpeed newBallSpeed) {

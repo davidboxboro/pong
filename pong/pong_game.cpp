@@ -73,9 +73,13 @@ void PongGame::handleEvents() {
             computerPaddle.updateReactSpeed(difficulty, ballSpeed);
             ball.updateBallSpeed(ballSpeed);
             ball.newPoint();
-            gameState = PLAY_POINT;
             ballClock.restart();
             scoreboard.startGame();
+            if (gameState == END_GAME) {
+                background.makeNewBackground();
+                ball.getNewTexture();
+            }
+            gameState = PLAY_POINT;
         }
         if (event.type == sf::Event::Closed) {
             window.close();

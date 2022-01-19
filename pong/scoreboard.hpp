@@ -19,6 +19,7 @@ private:
     sf::Text endText;
     Side winner;
     sf::Font font;
+    sf::Texture texture;
     ScoreboardState scoreboardState;
     
     void draw(sf::RenderTarget &target, sf::RenderStates states) const;

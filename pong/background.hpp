@@ -5,15 +5,17 @@
 
 class Background : public sf::Drawable {
 private:
-    const sf::RectangleShape topMargin;
-    const sf::RectangleShape bottomMargin;
-    
+    sf::Texture texture;
+    sf::RectangleShape topMargin;
+    sf::RectangleShape bottomMargin;
+
     void draw(sf::RenderTarget &target, sf::RenderStates states) const;
-    static sf::RectangleShape createMargin(const sf::Vector2f& position); // helper for constructor
+    sf::RectangleShape createMargin(const sf::Vector2f& position) const; // helper for constructor
 public:
     Background();
     const sf::RectangleShape& getTopMargin() const;
     const sf::RectangleShape& getBottomMargin() const;
+    void makeNewBackground();
 };
 
 #endif /* background_hpp */
